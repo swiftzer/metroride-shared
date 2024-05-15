@@ -1,0 +1,45 @@
+public final class net/swiftzer/metroride/shared/bigdecimal/BigDecimal : java/lang/Comparable {
+	public fun <init> (JI)V
+	public fun <init> (Ljava/lang/String;)V
+	public fun <init> (Ljava/math/BigDecimal;)V
+	public final fun abs ()Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;
+	public synthetic fun compareTo (Ljava/lang/Object;)I
+	public fun compareTo (Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;)I
+	public final fun div (Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;)Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;
+	public final fun div (Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;ILnet/swiftzer/metroride/shared/bigdecimal/RoundingMode;)Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public final fun minus (Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;)Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;
+	public final fun plus (Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;)Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;
+	public final fun setScale (ILnet/swiftzer/metroride/shared/bigdecimal/RoundingMode;)Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;
+	public final fun times (Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;)Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;
+	public fun toString ()Ljava/lang/String;
+	public final fun unaryMinus ()Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;
+}
+
+public final class net/swiftzer/metroride/shared/bigdecimal/BigDecimalSerializer : kotlinx/serialization/KSerializer {
+	public static final field INSTANCE Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimalSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lnet/swiftzer/metroride/shared/bigdecimal/BigDecimal;)V
+}
+
+public final class net/swiftzer/metroride/shared/bigdecimal/RoundingMode : java/lang/Enum {
+	public static final field CEILING Lnet/swiftzer/metroride/shared/bigdecimal/RoundingMode;
+	public static final field DOWN Lnet/swiftzer/metroride/shared/bigdecimal/RoundingMode;
+	public static final field FLOOR Lnet/swiftzer/metroride/shared/bigdecimal/RoundingMode;
+	public static final field HALF_DOWN Lnet/swiftzer/metroride/shared/bigdecimal/RoundingMode;
+	public static final field HALF_EVEN Lnet/swiftzer/metroride/shared/bigdecimal/RoundingMode;
+	public static final field HALF_UP Lnet/swiftzer/metroride/shared/bigdecimal/RoundingMode;
+	public static final field UP Lnet/swiftzer/metroride/shared/bigdecimal/RoundingMode;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lnet/swiftzer/metroride/shared/bigdecimal/RoundingMode;
+	public static fun values ()[Lnet/swiftzer/metroride/shared/bigdecimal/RoundingMode;
+}
+
+public final class net/swiftzer/metroride/shared/bigdecimal/RoundingMode_jvmKt {
+	public static final fun getJvmValue (Lnet/swiftzer/metroride/shared/bigdecimal/RoundingMode;)Ljava/math/RoundingMode;
+}
+
